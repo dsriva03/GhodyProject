@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Focus-Pocus",
+    "description": "A spooky extension that scares you to concentrate - or else!",
+    "version": "1.0.0",
+    "action": {
+    "default_popup": "hello.html",
+        "default_icon": {
+            "16": "/images/ghody16.png",
+            "32": "/images/ghody32.png",
+            "48": "/images/ghody48.png",
+            "128": "/images/ghody128.png"
+        },
+        "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://youtube.com/*",
+            "https://facebook.com/*",
+            "https://x.com/*",
+            "https://tiktok.com/*",
+            "https://instagram.com/*"
+          ],
+          "css": ["main.css"]
+        }
+      ]
+    
+    }
+}
+
+
