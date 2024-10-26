@@ -1,28 +1,8 @@
-body {
-    background-color: orange;
-    
-}
-#header {
-    font-family: "emilys candy";
-    text-align: center;
-}
-#ghody{
-    position: absolute;
-    width: 20%;
-    height: 30%;
-    left: 40%;
-    top: 37%; 
-}
-#videodiv{
-    position: absolute;
-    left: 37%;
-    top: 75%;
-}
-.bubble {
+ .bubble {
     position: absolute;
     width: 40%;
     height: 25%;
-    left: 30%;
+    left: 73%;
     top: 10%;
     display: flex;
     align-items: center;
@@ -40,16 +20,11 @@ body {
     width: 0; 
     height: 0;
     bottom: -20px; /* Place the tail below the bubble */
-    left: 30%; /* Adjust the horizontal positioning */
+    left: 20px; /* Adjust the horizontal positioning */
     border-style: solid;
     border-width: 20px 10px 0 10px; /* Triangle shape (tail) */
     border-color: #ffd transparent transparent transparent; /* Match the bubble color */
   }
   
-
-  
-
-
-
 
   

@@ -7,7 +7,9 @@
     "tabs",
     "storage",
     "scripting",
-    "webNavigation"
+    "webNavigation",
+    "webRequest",
+    "activeTab"
   ],
   "icons": {
     "16": "./images/ghody16.png",
@@ -25,22 +27,26 @@
   },
   "content_scripts": [
     {
+      "matches": [
+        "https://www.instagram.com/*",
+        "https://www.x.com/*",
+        "https://www.facebook.com/*",
+        "https://www.tiktok.com/*",
+        "https://www.youtube.com/"
+      ],
       "js": [
-        "/scripts/content.js"
+        "scripts/content.js"
       ],
       "css": [
-        "main.css"
-      ],
-      "matches": [
-        "https://youtube.com/*",
-        "https://facebook.com/*",
-        "https://x.com/*",
-        "https://tiktok.com/*",
-        "https://instagram.com/*"
+        "./test.css"
       ]
     }
   ],
   "background": {
-    "service_worker": "/scripts/background.js"
-  }
+    "service_worker": "scripts/background.js"
+  },
+    "chrome_url_overrides" : {
+       "PAGE_TO_OVERRIDE": "myPage.html"
+     }
+
 }
