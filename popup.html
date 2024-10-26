@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>FOCUS POCUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nosifer&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<style>
+  head {
+    font-family: "Emilys Candy", serif;
+    padding: 20px;
+  }
+
+  body {
+    background-color: #efad63;
+    font-family: "Emilys Candy", serif;
+    padding: 20px;
+    /*space between the characters */
+  }
+
+  input {
+    font-family: "Emilys Candy", serif;
+    width: 200px;
+    padding: 5px
+  }
+
+  button {
+    padding: 5px;
+    background-color: #ed9521;
+    color: black;
+    border: none;
+    /* no border in the button */
+    cursor: pointer;
+    /* turns the cursor into a hand to indicate clickable button */
+    margin-left: 5px;
+    /* adds 5 px of space to the left of the button to make room */
+  }
+</style>
+
+<body>
+  <h1>HOCUS FOCUS</h1>
+  <h2>Cast a spell to banish these websites</h2>
+  <input type="text" id="website" placeholder="Enter haunted URL here">
+  <button id="add">Banish</button>
+
+  <ul id="blockedList"></ul>
+
+  <script src="popup.js"></script>
+
+</body>
+
+</html>
